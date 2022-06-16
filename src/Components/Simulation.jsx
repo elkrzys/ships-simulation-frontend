@@ -44,6 +44,8 @@ const Simulation = () => {
             beginner={gameResult?.beginner}
             winner={gameResult?.winner}
             totalRounds={gameResult?.totalRounds}
+            playerOneShots={gameResult?.player1.totalShots}
+            playerTwoShots={gameResult?.player2.totalShots}
           />
           <div className="flex-v">
             <Board boardFields={gameResult?.player2.ownBoard.fields} />
