@@ -1,5 +1,7 @@
 # ships-simulation-frontend
 
+![simulation](https://user-images.githubusercontent.com/43821437/174072944-d82dd633-3b11-4adc-8351-ad878907bc4d.png)
+
 ## React JS application for battleship simulation
 
 Simple React UI application designed to present result of battleship simulation.
@@ -21,3 +23,4 @@ To perform the simulation again, press the `Reset` button and then start simulat
 Application runs at `localhost:3000` and sends request by axios to `localhost:7035/game/simulate`, the server has enabled CORS.
 
 To run the application in development mode simply open command line and use `npm start`.
+
