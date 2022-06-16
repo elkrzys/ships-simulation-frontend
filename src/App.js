@@ -1,4 +1,4 @@
-import Simulation from './Components/Simulation';
+import Simulation from './components/Simulation';
 
 function App() {
   return (

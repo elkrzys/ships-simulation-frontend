@@ -1,32 +1,33 @@
 import { useEffect, useState } from "react";
 import { GiCrossMark, GiSinkingShip, GiBigWave } from "react-icons/gi";
-import FieldState from "./FieldState";
-import "./board.css";
+import { FieldState } from "../strings";
+import "../styles/board.css";
 
 const Field = ({ state }) => {
   const [backgroundColor, setBackgroundColor] = useState("#89cdfb99");
   const [content, setContent] = useState(null);
 
   const handleContentChange = async () => {
+    const shipBg = "#d4d4d4ea";
     switch (state) {
       case FieldState.Empty:
         setContent("");
         setBackgroundColor("#89cdfb99");
         break;
       case FieldState.Miss:
-        setBackgroundColor("#3b8ec5ee");
+        setBackgroundColor("#3a9adaed");
         setContent(<GiBigWave style={{ color: "#003790" }} />);
         break;
       case FieldState.Hit:
-        setBackgroundColor("#c1c1c1ee");
+        setBackgroundColor(shipBg);
         setContent(<GiCrossMark style={{ color: "#bb0000" }} />);
         break;
       case FieldState.Sunk:
-        setBackgroundColor("#c1c1c1ee");
-        setContent(<GiSinkingShip style={{ color: "#3d0000" }} />);
+        setBackgroundColor(shipBg);
+        setContent(<GiSinkingShip style={{ color: "#840000" }} />);
         break;
       case FieldState.Occupied:
-        setBackgroundColor("#c1c1c1ee");
+        setBackgroundColor(shipBg);
         break;
       default:
         setBackgroundColor("#89cdfb99");

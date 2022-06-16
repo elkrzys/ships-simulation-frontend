@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import FieldState from "./FieldState";
+import { FieldState } from "../strings";
 import Row from "./Row";
-import "./board.css";
+import "../styles/board.css";
 
-const Board = ({ board }) => {
+const Board = ({ boardFields }) => {
   const [rows, setRows] = useState([]);
 
   const handleRowsAndFields = async () => {
@@ -13,7 +13,7 @@ const Board = ({ board }) => {
       let fields = [];
 
       for (let column = 1; column < 11; column++) {
-        let field = board?.find(
+        let field = boardFields?.find(
           (f) => f.position.row === row && f.position.column === column
         ) ?? { state: FieldState.Empty };
 
@@ -28,7 +28,7 @@ const Board = ({ board }) => {
 
   useEffect(() => {
     handleRowsAndFields();
-  }, [board]);
+  }, [boardFields]);
 
   return (
     <div className="board">

@@ -1,5 +1,11 @@
 export const endpoint = 'https://localhost:7035/game/simulate';
 
-export const simulationStatus = { success: 'success', error: 'error' };
+export const SimulationStatus = { success: 'success', error: 'error' };
 
-export const gameState = { init: 'init', played: 'played'};
+export const FieldState = {
+    Empty: "Empty",
+    Miss: "Miss",
+    Occupied: "Occupied",
+    Hit: "Hit",
+    Sunk: "Sunk",
+  };

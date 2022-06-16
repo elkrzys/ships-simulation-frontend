@@ -1,5 +1,5 @@
 import Field from "./Field";
-import "./board.css";
+import "../styles/board.css";
 
 const Row = ({ fields }) => {
   return (
