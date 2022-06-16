@@ -1,0 +1,67 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/abstract-hand-drawn-seamless-wave-pattern-scanned-53525253.jpg");
+    background-repeat: repeat;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: block;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.flex-v {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flex-v .results {
+    background-color: #ffffffcf;
+    margin: 1% auto 5% auto;
+    border-radius: 10px;
+}
+
+.flex-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.play-button {
+    display: block;
+    width: 120px;
+    height: 48px;
+    background-color: #a9efffef;
+    border: 2px solid #ccccccaa;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+}
+
+.play-button:hover {
+    background-color: #c5f4ffee;
+}
+
+.play-button button{
+    background: none;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;   
+}
